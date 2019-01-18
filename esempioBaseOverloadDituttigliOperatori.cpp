@@ -49,7 +49,7 @@ A operator+(A &a, A &b){
         return A(b.getX()+a.getX());
 }
 A operator-(A &a, A &b){
-        return A(b.getX()+a.getX());
+        return A(b.getX()-a.getX());
 }
 bool operator==(A &a, A &b){
         if(a.getX()==b.getX()) return true;
