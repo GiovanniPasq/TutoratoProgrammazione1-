@@ -76,7 +76,7 @@ int main(){
     cout<<"B: "<<b<<endl;
     A *c = new A(*a+*b); // equivalente ad A c= operator+(*a,*b);
     cout<<c;
-    if(a==b) cout<<endl<<"vero"<<endl;
+    if(*a==*b) cout<<endl<<"vero"<<endl;
     else cout<<endl<<"falso"<<endl;
 
     cout<<"D: "<<&d;
