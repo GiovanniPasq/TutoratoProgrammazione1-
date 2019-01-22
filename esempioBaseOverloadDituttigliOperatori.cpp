@@ -55,7 +55,6 @@ bool operator==(A &a, A &b){
         if(a.getX()==b.getX()) return true;
         return false;
 }
-
 /*
 il metodo stampaStr è un metodo esterno alla classe che prende un puntatore alla classe A e a richiamare
 un metodo della classe
