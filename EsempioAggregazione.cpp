@@ -47,8 +47,8 @@ class Person{
         void setAge(int age){
             this->age=age;
         }
-        void setLavoro(Lavoro lavoro){
-            this->lavoro=new Lavoro(lavoro.getNome(),lavoro.getGuadagno());
+        void setLavoro(Lavoro *lavoro){
+            this->lavoro=lavoro;
         }
         string getNomeLavoro(){
             return lavoro->getNome();
@@ -64,10 +64,10 @@ int main(){
     cout<<"age: "<<p->getAge();
     Lavoro l = Lavoro("insegnante",1800);
     cout<<endl<<"lavoro: "<<l.getNome()<<endl;
-    p->setLavoro(l);
+    p->setLavoro(&l);
     cout<<"nome Lavoro: "<<p->getNomeLavoro()<<endl;
     Lavoro l2 = Lavoro("postino",1000);
-    p->setLavoro(l2);
+    p->setLavoro(&l2);
     cout<<"Nuovo lavoro: "<<p->getNomeLavoro();
     return 0;
 }
