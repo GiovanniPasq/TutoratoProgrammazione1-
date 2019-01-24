@@ -41,6 +41,7 @@ class Persona{
     }
     ostream& put(ostream& out){
         out<<"Nome: "<<nome<<"Cognome: "<<cognome<<"Data N: "<<dataNascita<<endl;
+        return out;
     }
     string getNome(){
         return nome;
